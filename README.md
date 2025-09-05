@@ -172,6 +172,7 @@ diff
 2. `npm run dev`
 3. 瀏覽 `http://localhost:5173` 並進入 `/demo-h5p` 測試播放。
 
+
 預設會將播放器容器撐滿整個視窗，如需自訂大小，可在 `<H5PPlayer>` 上指定 `width`、`height`。
 
 程式碼重點：

@@ -10,7 +10,12 @@
   },
   "dependencies": {
     "vue": "^3.4.0",
+
     "h5p-standalone": "^1.4.0"
+
+
+    "h5p-standalone": "^1.4.0"
+
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
