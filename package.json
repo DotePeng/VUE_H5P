@@ -1,0 +1,20 @@
+{
+  "name": "vue-h5p",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo 'No tests'"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "h5p-standalone": "^1.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}
