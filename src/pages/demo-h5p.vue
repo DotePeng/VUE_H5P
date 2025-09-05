@@ -31,7 +31,9 @@ onMounted(() => {
 
 <style scoped>
 .demo {
-  max-width: 800px;
-  margin: auto;
+
+  width: 100%;
+  height: 100%;
+
 }
 </style>

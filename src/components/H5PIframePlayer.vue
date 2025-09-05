@@ -5,6 +5,9 @@
       ref="frame"
       :src="src"
       :allowfullscreen="allowFullscreen"
+
+      :allow="allowFullscreen ? 'fullscreen' : undefined"
+
       sandbox="allow-scripts allow-same-origin"
       referrerpolicy="no-referrer"
       @load="onLoaded"
@@ -16,12 +19,17 @@
 <script lang="ts" setup>
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
 
-const props = defineProps<{
-  src: string;
-  width?: number;
-  height?: number;
-  allowFullscreen?: boolean;
-}>();
+
+const props = withDefaults(
+  defineProps<{
+    src: string;
+    width?: number;
+    height?: number;
+    allowFullscreen?: boolean;
+  }>(),
+  { allowFullscreen: true }
+);
+
 
 const emit = defineEmits<{ (e: 'loaded'): void; (e: 'resized', h: number): void; (e: 'error', err: any): void }>();
 
